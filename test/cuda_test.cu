@@ -27,3 +27,4 @@ __global__ void part_death_test(){
     assert(threadId > 16);
 }
 CUDA_DEATH_TEST(part_death_test, 32, 1);
+CUDA_DEATH_TEST(part_death_test, 32, 2);

@@ -24,7 +24,7 @@ TEST(function, cuda_test_##blocks_##threads){ \
 }
 
 #define CUDA_DEATH_TEST(function, blocks, threads) \
-TEST(function, cuda_death_test_##blocks_##threads){ \
+TEST(function, cuda_death_test_##blocks##_##threads){ \
     ASSERT_DEATH(launch(function, blocks, threads, __FILE__, __LINE__), ""); \
 }
 

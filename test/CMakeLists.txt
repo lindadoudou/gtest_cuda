@@ -1,3 +1,4 @@
+include_directories(${PROJECT_SOURCE_DIR}/gtest_cuda)
 
 set(TEST_SOURCE
         cuda_test.cu
