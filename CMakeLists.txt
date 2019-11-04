@@ -39,4 +39,5 @@ add_subdirectory(submodule/googletest)
 
 # Test
 include_directories(gtest_cuda)
+add_subdirectory(src)
 add_subdirectory(test)

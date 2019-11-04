@@ -8,11 +8,6 @@
 #include <cuda_runtime.h>
 #include "base.h"
 
-void launch(void (*func)(), int blocks, int threads, const char * file, const int line)
-{
-    (*func)<<<blocks, threads>>>();
-    cudaError_t re = cudaDeviceSynchronize();
-    checkCudaResult(re, file, line);
-}
+void launch(void (*func)(), int blocks, int threads, const char * file, const int line);
 
 #endif //GTEST_CUDA_SRC_LAUNCH_H_
